@@ -94,8 +94,11 @@ hr{
 }
 
 h3{
+    padding-left:30%;
+    width: 50px;
     text-align: center;
-    font-family: incompleeta, light;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1ch;
     color: #1d343f;
     margin-bottom: 80px;
 }
