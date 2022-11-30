@@ -10,6 +10,9 @@ body {
     background-size: 300% 300%;
     animation: colors 12s ease infinite;
     overflow-x: hidden; 
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 
 @keyframes colors {
@@ -40,7 +43,10 @@ footer{
     text-align: center;
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+        
 }
 
 .headop li {
@@ -52,7 +58,6 @@ footer{
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
     color: #faf2e9;
-
 }
 
 .rightside1 > .img-1 > img {
@@ -83,7 +88,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;   
 }
 
 
@@ -168,6 +175,9 @@ footer{
 @media only screen and (max-width: 1330px) {
     body{
         overflow-x: hidden;
+        box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
     }
     .txtbox-1 >h1{
         font-size: 50px;
@@ -180,6 +190,9 @@ footer{
 @media only screen and (max-width: 1090px) {
     body{
         overflow-x: hidden;
+        box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
     }
 
     .redirectwpp{
@@ -226,11 +239,7 @@ footer{
     }
 
     .img-1 > img{
-        margin: -170px;
-        width: 500px;
-        height: auto;
-        display: flex;
-        justify-content: center;
+        display: none;
 
     }
 
@@ -241,6 +250,9 @@ footer{
     body{
         margin: 0;
         overflow-x: hidden;     
+        box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
     }
 
     .hl{
@@ -294,13 +306,7 @@ footer{
     }
 
     .img-1 >img{
-        margin: -200px;
-        width: 400px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        
-
+        display:none;
     }
     
     .headop {
