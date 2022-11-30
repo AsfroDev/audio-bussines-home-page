@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/compare.css">
+    <link rel="icon" type="image/x-icon" href="/Images/favicon/favicon-16x16.png"> 
+    <title>Compare</title>
+</head>
+<body>
+
+    <div class="headop">
+
+        <nav>
+            <ul>
+                 <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511920154900">Contrate agora mesmo</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="pag-2">
+
+        <div class="leftside2">
+            <div class="img-2">
+                <img src="/Images/songbro.png" width="400">
+            </div>
+            <button class="redirectwpp" id="wpp1" style="border-color:none; color: #2c383e;">Entre em contato</button>
+
+            <script type="text/javascript">
+                document.getElementById("wpp1").onclick = function () {
+                    location.href = "https://api.whatsapp.com/send?1=pt_BR&phone=5511920154900";
+                };
+            </script>
+        </div>
+
+
+        <div class="rightside2">
+            <div class="txtbox-2">
+                <h1>Sua Música Fica<br>Melhor</h1>
+                <p>Exemplos reais e autorais:</p>
+            </div>
+            <div class="playerbox">
+                <button>
+                <p>Antes:</p>
+                <audio src="/audio/Antes-1.mp3"  autostart="false" controls ></audio>
+                <audio src="/audio/Antes-2.mp3"  autostart="false" controls></audio>
+                <p>Depois:</p>
+                <audio src="/audio/Depois-1.mp3" autostart="false" controls></audio>
+                <audio src="/audio/Depois-2.mp3" autostart="false" controls></audio>
+                </button>
+
+                <script>
+                    document.addEventListener('play', function(e){  
+                        var audios = document.getElementsByTagName('audio');  
+                        for(var i = 0, len = audios.length; i < len;i++){  
+                            if(audios[i] != e.target){  
+                                audios[i].pause();  
+                            }  
+                        }  
+                    }, true);
+                    </script>
+                    
+            </div>
+        </div>
+
+    </div>  
+    <p></p><br>
+    <p></p>
+
+
+        <footer>
+
+            <div class="copyright">
+                Asfrotype © Todos os direitos reservados. 2022
+            </div>
+
+        </footer>
+   
+    
+</body>
+</html>

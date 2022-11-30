@@ -1,0 +1,13 @@
+main:
+#b469ff
+
+main 2: 
+#9a36ff
+
+clear:
+#cd9cff
+
+gradient: left to right
+#040814
+#0c193e
+#000000
