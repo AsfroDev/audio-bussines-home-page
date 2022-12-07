@@ -3,41 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="../src/styles/index.css">
+
     <title>Sound Design</title>
+
 </head>
 
 <body>
     <audio src="main.mp3" autoplay controls loop="true" hidden="true"></audio>
 
-    <div class="headop">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a></a></li>
-                <li><a href="compare.html">Compare</a></li>
-                <li><a></a></li>
-                <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511920154900" id="contatonav">Contato</a></li>
-            </ul>
-        </nav>
+    <div class="main-div">
+        <div class="headop">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a></a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a></a></li>
+                    <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511920154900" id="contatonav">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="text-logo">
+            <h1>Diferencie</h1>
+        </div>
+        <div class="central_div">
+                <div class="l_side">
+                    <h3>Crie algo novo :D</h3>
+                </div>
+                <div class="r_side">            
+                        <button class="redirectwpp" id="wpp1"><p>Começar</p></button>
+                        <script type="text/javascript">
+                            document.getElementById("wpp1").onclick = function () {
+                                location.href = "https://api.whatsapp.com/send?1=pt_BR&phone=5511920154900";
+                            };
+                        </script>        
+                </div>           
+        </div>
+    
     </div>
-    <h1>Diferencie</h1>
-    <div class="central_div">
-            <div class="l_side">
-                <h3>Sua faixa<br>soando profissional</h3>
-            </div>
-            <div class="r_side">            
-                    <button class="redirectwpp" id="wpp1"><p>Começar</p></button>
-                    <script type="text/javascript">
-                        document.getElementById("wpp1").onclick = function () {
-                            location.href = "https://api.whatsapp.com/send?1=pt_BR&phone=5511920154900";
-                        };
-                    </script>        
-            </div>           
-    </div>
-
+    
     <!--div class="bottomdiv">
         <button class="redirecttopag2" id="compare" style="border-color:none; color:#3D3C42">btnpage2</button>
                 <script type="text/javascript">
@@ -54,167 +61,5 @@
     <footer-->
 
 </body>
-
-<style>
-/*======================RESET======================*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    border: none;
-    font-family: incompleeta;
-}
-
-    body {
-    margin: 0;
-    background: #faf2e9;
-    background: linear-gradient(65deg, #faf2e9, #A1C298, #AAC4FF);
-    background-size: 300% 300%;
-    animation: colors 12s ease infinite;
-    overflow-x: hidden; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-@keyframes colors {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-/*---------------------TOPO---------------------*/
-.headop {
-    width: 100%;  
-    max-height: 70px;
-    position: fixed;
-    padding: 7px 0;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;   
-}
-.headop li {
-    display: inline-block;
-    margin: 0 15px;
-}
-.headop a {
-    text-shadow: -1px -2px 8px #faf2e9;
-    font-family: incompleeta;
-    text-decoration: none;
-    color: #2c383e;
-    transition: color 200ms ease-out 20ms;
-    
-}
-a:hover{
-    color: #A1C298;
-}
-/*---------------------Diferencie---------------------*/
-h1{
-    text-shadow: -1px -2px 5px #faf2e9;
-    text-align: center;
-    font-size: 100px;
-    font-family: incompleeta;
-    color: #2c383e;
-    line-height: 80px; 
-    margin-bottom: 0;
-    padding-top: 20vh;  
-}
-/*---------------------Central Div---------------------*/
-.central_div{
-    width: 100vw;
-    height: 100%;
-    padding-top: 70px;
-    padding:60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;   
-}
-.l_side{
-    width: 24.2vw;
-    width: 50%;
-}
-.l_side>h3{
-    text-align: left;
-    padding-left: 2vw;
-    font-family: incompleeta, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
-    letter-spacing: 3px;
-    text-shadow: -1px 2px 5px #faf2e9;
-    color: #1d343f;
-}
-.r_side{
-    width: 20%; 
-    border: none;
-    padding-right: 100px;
-}
-.r_side>button{
-    width: 200px;
-    height: 50px;
-    background-color: #6ba05d;
-    border-radius: 10px 5px;
-    border-style: none; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 800ms ease-out 20ms;
-}
-button:hover{
-    background-color: #2c383e;
-    
-}
-.r_side>button>p{
-    margin: 0;
-    padding-bottom: 10px;
-    font-size: 30px;
-    font-family: incompleeta;
-    letter-spacing: 2px;
-    background-image: linear-gradient(65deg, #faf2e9, #A1C298, #AAC4FF);
-    animation: bg 12s ease infinite;
-    background-size: 300% 300%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    
-}
-@keyframes bg {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-/*---------------------Bottom Div---------------------*/
-.bottomdiv{}
-.redirecttopag2{}
-
-footer{
-    width: 100%;  
-    max-height: 70px;
-    padding: 35px 0;
-    text-align: center;
-}
-.copyright {
-    width: 100%;
-    color: #2c383e;
-    text-align: center;
-}
-</style>
 
 </html>
